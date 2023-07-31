@@ -16,6 +16,12 @@ APPROVED_JOBS = [
 ]
 
 class Person:
+    def __init__(self, name = None, job = None):
+        if name is not None:
+            return self.set_name(name)
+        if job is not None:
+            return self.set_job(job)
+
     def get_name(self):
         return self._name
 
