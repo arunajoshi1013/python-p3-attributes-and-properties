@@ -12,6 +12,12 @@ APPROVED_BREEDS = [
 ]
 
 class Dog:
+    def __init__(self, name=None, breed=None):
+        if name is not None:
+            return self.set_name(name)
+        if breed is not None:
+            return self.set_breed(breed)
+
     def get_name(self):
         return self._name
     
